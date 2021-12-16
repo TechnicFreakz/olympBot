@@ -3,6 +3,7 @@ import os
 from discord.ext import commands
 from discord.ext.commands import Bot
 import random
+from decouple import config
 
 #client = discord.Client(activity=discord.Game(name='my game'))
 
@@ -36,4 +37,4 @@ async def wrong_citation(ctx):
     randNum = random.randrange(0, len(wrong_citations))
     await ctx.send(wrong_citations[randNum])
 
-bot.run(os.getenv('OLYMP_TOKEN'))
+bot.run(config('OLYMP_TOKEN'))
