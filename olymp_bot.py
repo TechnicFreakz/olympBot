@@ -12,7 +12,7 @@ wrong_citations = ['„Frage nicht, was dein Land für dich tun kann, frage was 
                     '„Mister Gorbatschow, tear down this wall!“ - David Hasselhoff',
                     '„Dies ist mein Leib, der für euch hingegeben wird.“ - Gina Wild']
 
-bot = commands.Bot(command_prefix = '$') #put your own prefix here
+bot = commands.Bot(command_prefix = '>') #put your own prefix here
 
 @bot.event
 async def on_ready():
@@ -27,6 +27,14 @@ async def on_message(message):
         await message.channel.send('Hello!')
     
     await bot.process_commands(message)
+
+@bot.command()
+async def antwort(ctx):
+    await ctx.send("42!")
+
+@bot.command()
+async def soon(ctx):
+    await ctx.send("\"Soon\" does not imply any particular date, time, decade, century, or millennia in the past, present, and certainly not the future. \"Soon\" shall make no contract or warranty between Cohhilition and the end user. \"Soon\" will arrive some day, CohhCarnage does guarantee that \"soon\" will be here before the end of time. Maybe. Do not make plans based on \"soon\" as CohhCarnage will not be liable for any misuse, use, or even casual glancing at \"soon.\"")
 
 @bot.command()
 async def ping(ctx):
