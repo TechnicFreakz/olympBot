@@ -5,12 +5,24 @@ from discord.ext.commands import Bot
 import random
 from decouple import config
 
-#client = discord.Client(activity=discord.Game(name='my game'))
+INITIAL_EXTENSIONS = [
+    'cocks.aphrodite',
+    'cocks.ares',
+    'cocks.hephaistos',
+    'cocks.hera',
+    'cocks.hermes',
+    'cocks.zeus'
+]
 
 wrong_citations = ['„Frage nicht, was dein Land für dich tun kann, frage was du für dein Land tun kannst.“ - Kim Jong-il',
                     '„Willst du den Charakter eines Menschen erkennen, so gib ihm Macht.“ - Roland Koch',
                     '„Mister Gorbatschow, tear down this wall!“ - David Hasselhoff',
                     '„Dies ist mein Leib, der für euch hingegeben wird.“ - Gina Wild']
+
+class OlympBot(commands.bot):
+    def __init__(self):
+        super().__init__(command_prefix = '>')
+
 
 bot = commands.Bot(command_prefix = '>') #put your own prefix here
 
