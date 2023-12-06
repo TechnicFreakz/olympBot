@@ -23,7 +23,7 @@ async def answer(ctx):
 
 @bot.slash_command(name = "fzitat", description = "Ein zufälliges falsch zugeordnetes Zitat bitte!")
 async def fzitat(ctx):
-    await ctx.respond(constants.wrong_citations[random.randint(0, len(wrong_citations) - 1)])
+    await ctx.respond(constants.wrong_citations[random.randint(0, len(constants.wrong_citations) - 1)])
 
 @bot.slash_command(name = "soon", description = "When will it happen?")
 async def hello(ctx):
