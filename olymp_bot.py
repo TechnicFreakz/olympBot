@@ -43,7 +43,7 @@ wrong_citations = ['„Frage nicht, was dein Land für dich tun kann, frage was 
 		   '„Wer unter euch ohne Sünde ist der werfe den ersten Stein auf sie.“ - Ein Autonomer beim G20-Gipfel',
 		   '„Das Ärgerliche am Ärger ist, dass man sich schadet, ohne anderen zu nützen.“ - Anakin Skywalker',
 		   '„Erst das Essen, dann die Moral.“ - McDonalds',
-		   '„Ach wie gut, dass niemand weiß, dass ich Rumpe,lstilzchen heiß.“ - Anonymous'
+		   '„Ach wie gut, dass niemand weiß, dass ich Rumpelstilzchen heiß.“ - Anonymous'
 		   '„Ihr wollt meinen Schatz? Den könnt ihr haben. Sucht ihn doch! Irgendwo habe ich den größten Schatz der Welt versteckt.“ - Uli Hoeneß',
 		   '„Vorwärts immer, rückwärts nimmer.“ - Supermario',
 		   '„Ein Zauberer kommt nie zu spät, ebenso wenig zu früh, er kommt immer genau dann, wann er es beabsichtigt.“ - Motto der deutschen Bahn',
