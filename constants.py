@@ -46,4 +46,4 @@ wrong_citations = ['„Frage nicht, was dein Land für dich tun kann, frage was 
 
 hello_response = "Hey!"
 
-soon_response = '"Soon" does not imply any particular date, time, decade, century, or millennia in the past, present, and certainly not the future. "Soon" shall make no contract or warranty between me and you. "Soon" will arrive some day, I do guarantee that "soon" will be here before the end of time. Maybe. Do not make plans based on "soon" as I will not be liable for any misuse, use, or even casual glancing at "soon."'
+soon_response = '"Soon" does not imply any particular date, time, decade, century, or millennia in the past, present, and certainly not the future. "Soon" shall make no contract or warranty between me and you. "Soon" will arrive some day, I do guarantee that "Soon" will be here before the end of time. Maybe. Do not make plans based on "Soon" as I will not be liable for any misuse, use, or even casual glancing at "Soon."'
