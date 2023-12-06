@@ -70,5 +70,9 @@ async def answer(ctx):
 @bot.slash_command(name = "fzitat", description = "Ein zufälliges falsch zugeordnetes Zitat bitte!")
 async def fzitat(ctx):
     await ctx.respond(wrong_citations[random.randint(0, len(wrong_citations) - 1)])
+    
+@bot.slash_command(name = "soon", description = "When will it happen?")
+async def hello(ctx):
+    await ctx.respond('"Soon" does not imply any particular date, time, decade, century, or millennia in the past, present, and certainly not the future. "Soon" shall make no contract or warranty between me and you. "Soon" will arrive some day, I do guarantee that "soon" will be here before the end of time. Maybe. Do not make plans based on "soon" as I will not be liable for any misuse, use, or even casual glancing at "soon."')
 
 bot.run(os.getenv('OLYMP_TOKEN'))
