@@ -13,7 +13,7 @@ wrong_citations = ['„Frage nicht, was dein Land für dich tun kann, frage was 
                     '„Dies ist mein Leib, der für euch hingegeben wird.“ - Gina Wild']
 
 bot = commands.Bot(command_prefix = '>') #put your own prefix here
-
+#new comment
 @bot.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(bot))
