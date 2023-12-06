@@ -34,5 +34,5 @@ async def hello(ctx):
 
 @bot.slash_command(name = "stats", description = "Get the stats of a fortnite player")
 async def stats(ctx, pname):
-    await ctx.respond(api.stats.fetch.fetch_by_name(name = pname, image = "all").image_url)
+    await ctx.respond(api.stats.fetch_by_name(name = pname, image = fortnite_api.enums.StatsImageType.ALL).image_url)
 bot.run(os.getenv('OLYMP_TOKEN'))
