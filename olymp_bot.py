@@ -40,6 +40,11 @@ async def stats(ctx, pname):
         response = f"The stats of {pname} are private"
     except fortnite_api.errors.NotFound:
         response = f"The account {pname} does not exist"
-
     await ctx.respond(response)
+
+@bot.slash_command(name = "calc", description = "Calculate math expression")
+async def calculate(ctx, expr):
+    await ctx.respond(eval(expr))
+
+
 bot.run(os.getenv('OLYMP_TOKEN'))
