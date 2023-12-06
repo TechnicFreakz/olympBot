@@ -38,6 +38,8 @@ async def stats(ctx, pname):
         response = api.stats.fetch_by_name(name = pname, image = fortnite_api.enums.StatsImageType.ALL).image_url
     except fortnite_api.errors.Forbidden:
         response = f"The stats of {pname} are private"
+    except fortnite_api.errors.NotFound:
+        response = f"The account {pname} does not exist"
 
     await ctx.respond(response)
 bot.run(os.getenv('OLYMP_TOKEN'))
