@@ -5,8 +5,12 @@ from dotenv import load_dotenv
 load_dotenv()
 bot = discord.Bot()
 
-#comment
-wrong_citations = ['"Frage nicht, was dein Land für dich tun kann, frage was du für dein Land tun kannst." Kim Jong-il',]
+
+wrong_citations = ['„Frage nicht, was dein Land für dich tun kann, frage was du für dein Land tun kannst.“ - Kim Jong-il',
+                    '„Willst du den Charakter eines Menschen erkennen, so gib ihm Macht.“ - Roland Koch',
+                    '„Mister Gorbatschow, tear down this wall!“ - David Hasselhoff',
+                    '„Dies ist mein Leib, der für euch hingegeben wird.“ - Gina Wild']
+
 
 @bot.event
 async def on_ready():
