@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 bot = discord.Bot()
 
-
+#comment
 wrong_citations = ['"Frage nicht, was dein Land für dich tun kann, frage was du für dein Land tun kannst." Kim Jong-il',]
 
 @bot.event
