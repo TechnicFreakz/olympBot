@@ -2,11 +2,14 @@ import discord
 import os
 from dotenv import load_dotenv
 import random
+import fortnite_api
+
 import constants
 
 load_dotenv()
 bot = discord.Bot()
 
+api = fortnite_api.FortniteAPI(os.getenv('FN_STATS_API_TOKEN'))
 
 @bot.event
 async def on_ready():
@@ -29,4 +32,7 @@ async def fzitat(ctx):
 async def hello(ctx):
     await ctx.respond(constants.soon_response)
 
+@bot.slash_command(name = "stats", description = "Get the stats of a fortnite player")
+async def stats(ctx, pname):
+    await ctx.respond(api.stats.fetch.fetch_by_name(name = pname, image = "all").image_url)
 bot.run(os.getenv('OLYMP_TOKEN'))
